@@ -1,0 +1,58 @@
+<!--
+1. 화면 구성
+    1) 전체 화면    (배경 이미지)
+        a) header   (상대방 프로필 , 기념일, 나의 프로필)
+        b) body     (별다른 기능 없음)
+        c) footer   (배경 이미지 설정, 기념일 설정, 캘린더 설정)
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link href="home.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+    <!--1. 전체 화면-->
+    <div class="whole">
+        <!--배경 이미지-->
+        <img src="img3.jpg" alt="">
+        <!--header-->
+        <div class="header">
+            <!--상대방 프로필-->
+            <span class="pro1" onclick="popup()" style="cursor: pointer;">
+                <img src="img.jpg">
+            </span>
+            <!--기념일-->
+            <a href="#">
+                <span class="memoday_name">Our first day</span><br>
+                <span class="memoday_num">300</span>
+                <span class="memoday">일째</span> <!--일째 또는 일 남음으로 표시됌-->
+            </a>
+            <!--나의 프로필-->
+            <span class="pro2" onclick="popup()" style="cursor: pointer;">
+                <img src="nypd.jpg">
+            </span>
+        </div>
+        <!--body-->
+        <span class="body">
+            <span class="lover1">김모모</span>&#10084;<span class="lover2">박모모</span>
+        </span>
+        <!--footer-->
+        <div class="footer">
+            <!--배경 설정-->
+            <span class="back_img" onclick="" style="cursor: pointer;">
+                <img class="icon" src="album_nonSelect.png">
+            </span>
+            <!--기념일 설정-->
+            <span class="memoday_set" onclick="" style="cursor: pointer;">
+                <img class="icon" src="rings.png">
+            </span>
+            <!--캘린더-->
+            <span class="calender" onclick="" style="cursor: pointer;">
+                <img class="icon" src="calendar.png">
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
