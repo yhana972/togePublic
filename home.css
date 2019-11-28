@@ -3,6 +3,9 @@ html, body{ /*기본*/
     height: 100%;
     margin: 0;
 }
+span{
+    cursor: pointer;
+}
 .header, .footer{
     position: fixed;
     width: 100%;
@@ -68,7 +71,7 @@ span.calender{
     left: 390px;
 }
 /*기념일*/
-a{
+.memo{
     text-decoration: none;
     font-family: sans-serif;
     color: white;
@@ -81,8 +84,6 @@ a{
 	right: 0;
     bottom: 0;
     margin: auto;
-    display: inline-block;
-    width: 500px;
 }
 span.memoday_name{
     font-size: 40px;
