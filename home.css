@@ -13,9 +13,11 @@ div.header{
 }
 span.body{
     font-family: sans-serif;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.1em black;
     position: fixed;
-    top: 140px;
-    font-size: 20px;
+    top: 150px;
+    font-size: 35px;
 }
 div.footer{
     bottom: 55px;
@@ -84,8 +86,8 @@ a{
     width: 500px;
 }
 span.memoday_name{
-    font-size: 35px;
+    font-size: 40px;
 }
 .memoday_num, .memoday{
-    font-size: 45px;
+    font-size: 55px;
 }
