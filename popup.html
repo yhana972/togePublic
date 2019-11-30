@@ -1,0 +1,59 @@
+<!--
+1. 화면 구성
+    1) 전체 화면    (배경 이미지)
+        a) header   (상대방 프로필 , 기념일, 나의 프로필)
+        b) body     (별다른 기능 없음)
+        c) footer   (배경 이미지 설정, 기념일 설정, 캘린더 설정)
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link href="home.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="home.js"></script>
+</head>
+<body>
+    <div style="height: 300px;"></div>
+    <a href="#layer1" class="btn-example">일반 팝업레이어</a>
+    <div id="layer1" class="pop-layer">
+        <div class="pop-container">
+            <div class="pop-conts">
+                <!--content //-->
+                <p class="ctxt mb20">Thank you.<br>
+                    Your registration was submitted successfully.<br>
+                    Selected invitees will be notified by e-mail on JANUARY 24th.<br><br>
+                    Hope to see you soon!
+                </p>
+    
+                <div class="btn-r">
+                    <a href="#" class="btn-layerClose">Close</a>
+                </div>
+                <!--// content-->
+            </div>
+        </div>
+    </div>
+    <br/><br/>
+    <a href="#layer2" class="btn-example">딤처리 팝업레이어 1</a>
+    <div class="dim-layer">
+        <div class="dimBg"></div>
+        <div id="layer2" class="pop-layer">
+            <div class="pop-container">
+                <div class="pop-conts">
+                    <!--content //-->
+                    <p class="ctxt mb20">Thank you.<br>
+                        Your registration was submitted successfully.<br>
+                        Selected invitees will be notified by e-mail on JANUARY 24th.<br><br>
+                        Hope to see you soon!
+                    </p>
+    
+                    <div class="btn-r">
+                        <a href="#" class="btn-layerClose">Close</a>
+                    </div>
+                    <!--// content-->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

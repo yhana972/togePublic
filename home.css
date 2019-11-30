@@ -3,9 +3,6 @@ html, body{ /*기본*/
     height: 100%;
     margin: 0;
 }
-span{
-    cursor: pointer;
-}
 .header, .footer{
     position: fixed;
     width: 100%;
@@ -45,6 +42,7 @@ div.whole{
     justify-content: center;
     border-radius: 50%; 
     position: absolute;
+    cursor: pointer;
 }
 span.pro1{
     left: 50px;
@@ -77,17 +75,121 @@ span.calender{
     color: white;
     font-weight: bold;
     text-shadow: 0.2em 0.2em 0.2em black;
-    position: absolute;
     text-align: center;
     left: 0;
 	top: 5px;
 	right: 0;
     bottom: 0;
     margin: auto;
+    position: absolute;
+    z-index: -10;
 }
 span.memoday_name{
     font-size: 40px;
 }
 .memoday_num, .memoday{
     font-size: 55px;
+}
+/*팝업*/
+div#popup_info{
+  width: 70%;
+  height: 55%;
+  left: 0;
+	top: 0;
+	right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #fff;
+  position: absolute;
+  right: -7;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5%;
+  overflow: hidden;
+}
+.header_pop, .footer_pop, .body_pop{
+  width:100%;
+  height: 100%;
+  position: absolute;
+}
+.footer_pop{
+  top: 60%;
+  background-color:#fff;
+}
+.header_img_pop{
+  width: 100%;
+}
+.pro1_pop, .call_pop{
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; 
+  position: absolute;
+}
+.pro1_pop{
+  width: 125px;
+  height: 125px;
+  left: 8%;
+  top: 52%;
+}
+.call_pop{
+  width: 70px;
+  height: 70px;
+  left: 80%;
+  top: 55%;
+  border: solid 1px #dbdbdb;
+}
+.call_icon{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; 
+  position: absolute;
+  cursor: pointer;
+}
+.font_pop{
+  font-family: sans-serif;
+  font-weight: 200;
+  color: #585858;
+  position: absolute;
+  top: 15%;
+}
+#user_info{
+  text-align: left;
+  right: 65%;
+}
+#name{
+  font-size: 3.5vmin;
+  font-weight: bold;
+}
+.birthday{
+  font-size: 2.5vmin;
+}
+#email{
+ font-size: 2vmin;
+}
+.close{
+  left: 88%;
+  top: 2%;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+}
+#close{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; 
 }

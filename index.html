@@ -10,6 +10,7 @@
 <head>
     <link href="home.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="home.js"></script>
 </head>
 <body>
     <!--1. 전체 화면-->
@@ -19,7 +20,7 @@
         <!--header-->
         <div class="header">
             <!--상대방 프로필-->
-            <span class="pro1" onclick="popup()">
+            <span class="pro1">
                 <img src="img.jpg">
             </span>
             <!--기념일-->
@@ -29,7 +30,7 @@
                 <span class="memoday">일째</span> <!--일째 또는 일 남음으로 표시됌-->
             </p>
             <!--나의 프로필-->
-            <span class="pro2" onclick="popup()">
+            <span class="pro2">
                 <img src="nypd.jpg">
             </span>
         </div>
@@ -52,6 +53,37 @@
                 <img class="icon" src="calendar.png">
             </span>
         </div>
+    </div>
+        <!--사용자 클릭 시 뜨는 딤 레이어 팝업-->
+<div class="popup" id="popup_info" style="display: none;">
+        <!--배경 이미지-->
+        <div class="header_pop">
+            <img class="header_img_pop" src="img2.jpg">
+        </div>
+        <!--사용자 정보-->
+        <div class="footer_pop">
+            <span class="font_pop" id="user_info">
+                <span class="name" id="name">김모모</span><br>
+                 <span class="birthday">
+                    <span id="birth_y">1999</span>년
+                    <span id="birth_m">7</span>월
+                    <span id="birth_d">22</span>일
+                </span><br>
+                <span class="email" id="email">yhana972@gmail.com</span>
+            </span>
+        </div>
+        <!--사용자 프로필, 무료통화 아이콘-->
+        <div class="body_pop">
+            <span class="close">
+                <img id="close" src="close.png">
+            </span>
+            <span class="pro1_pop" href="#">
+                <img src="img.jpg">
+            </span>
+            <span class="call_pop" href="#">
+                <img class="call_icon" src="icon_call.png">
+            </span>
+         </div>
     </div>
 </body>
 

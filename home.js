@@ -1,0 +1,10 @@
+$(function(){
+	$(".pro1").on("click",function(){
+		$("#popup_info").css("display","block");
+	});
+});
+$(function(){
+	$(".close").on("click",function(){
+		$("#popup_info").css("display","none");
+	});
+})
