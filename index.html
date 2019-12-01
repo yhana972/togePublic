@@ -8,20 +8,20 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <link href="home.css" rel="stylesheet" type="text/css">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="home.js"></script>
+    <script src="js/home.js"></script>
 </head>
 <body>
     <!--1. 전체 화면-->
     <div class="whole">
         <!--배경 이미지-->
-        <img src="img3.jpg" alt="">
+        <img id="back_img" src="img/backImg_base.png" alt="">
         <!--header-->
         <div class="header">
             <!--상대방 프로필-->
             <span class="pro1">
-                <img src="img.jpg">
+                <img id="profile_1" src="icon/user.png">
             </span>
             <!--기념일-->
             <p class="memo">
@@ -31,26 +31,26 @@
             </p>
             <!--나의 프로필-->
             <span class="pro2">
-                <img src="nypd.jpg">
+                <img id="profile_2" src="icon/user.png">
             </span>
         </div>
         <!--body-->
         <span class="body" style="cursor: default;">
-            <span class="lover1" style="cursor: default;">김모모</span>&#10084;<span class="lover2" style="cursor: default;">박모모</span>
+            <span class="lover1" style="cursor: default;">김모모</span>&#10084;<span class="lover2" style="cursor: default;">백모모</span>
         </span>
         <!--footer-->
         <div class="footer">
             <!--배경 설정-->
-            <span class="back_img" onclick="">
-                <img class="icon" src="album_nonSelect.png">
+            <span class="back_img">
+                <img class="icon" src="icon/album_nonSelect.png">
             </span>
             <!--기념일 설정-->
-            <span class="memoday_set" onclick="">
-                <img class="icon" src="rings.png">
+            <span class="memoday_set">
+                <img class="icon" src="icon/rings.png">
             </span>
             <!--캘린더-->
-            <span class="calender" onclick="">
-                <img class="icon" src="calendar.png">
+            <span class="calender">
+                <img class="icon" src="icon/calendar.png">
             </span>
         </div>
     </div>
@@ -58,30 +58,33 @@
 <div class="popup" id="popup_info" style="display: none;">
         <!--배경 이미지-->
         <div class="header_pop">
-            <img class="header_img_pop" src="img2.jpg">
+            <img class="header_img_pop" src="img/backImg_base.png">
         </div>
-        <!--사용자 정보-->
+        <!--사용자 정보(이름, 생년월일, 이메일)-->
         <div class="footer_pop">
             <span class="font_pop" id="user_info">
-                <span class="name" id="name">김모모</span><br>
+                <span class="name" id="name"></span><br>
                  <span class="birthday">
-                    <span id="birth_y">1999</span>년
-                    <span id="birth_m">7</span>월
-                    <span id="birth_d">22</span>일
+                    <span id="birth_y"></span>년
+                    <span id="birth_m"></span>월
+                    <span id="birth_d"></span>일
                 </span><br>
-                <span class="email" id="email">yhana972@gmail.com</span>
+                <span class="email" id="email"></span>
             </span>
         </div>
-        <!--사용자 프로필, 무료통화 아이콘-->
+        <!--사용자 프로필, 무료통화 아이콘, 팝업 닫기 아이콘, 하단 버튼(상대방:번호 등록, 본인: 프로필 편집)-->
         <div class="body_pop">
             <span class="close">
-                <img id="close" src="close.png">
+                <img id="close" src="icon/close.png">
             </span>
-            <span class="pro1_pop" href="#">
-                <img src="img.jpg">
+            <span class="pro1_pop">
+                <img id="profile_pop" src="">
             </span>
-            <span class="call_pop" href="#">
-                <img class="call_icon" src="icon_call.png">
+            <span class="call_pop">
+                <img class="call_icon" src="icon/icon_call.png">
+            </span>
+            <span class="font_pop" id="btn_pop">
+                번호 등록
             </span>
          </div>
     </div>

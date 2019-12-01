@@ -17,7 +17,7 @@ span.body{
     text-shadow: 0.1em 0.1em 0.1em black;
     position: fixed;
     top: 150px;
-    font-size: 35px;
+    font-size: 3.5vmin;
 }
 div.footer{
     bottom: 25px;
@@ -33,7 +33,7 @@ div.whole{
     position: relative;
 }
 /*프로필 이미지, (배경 설정, 기념일 설정, 캘린더) 아이콘*/
-.pro1, .pro2, .back_img, .memoday_set, .calender{ 
+.back_img, .memoday_set, .calender{ 
     width: 110px;
     height: 110px;
     overflow: hidden;
@@ -44,11 +44,27 @@ div.whole{
     position: absolute;
     cursor: pointer;
 }
-span.pro1{
-    left: 50px;
+.pro1{
+  width: 110px;
+  height: 110px;
+  left: 5%;
+  position: absolute;
 }
-span.pro2{
-    right: 50px;
+.pro2{
+  width: 110px;
+  height: 110px;
+  right: 5%;
+  position: absolute;
+}
+#profile_1, #profile_2{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; 
+  position: absolute;
 }
 /*아이콘*/
 .icon{
@@ -70,26 +86,27 @@ span.calender{
 }
 /*기념일*/
 .memo{
-    text-decoration: none;
-    font-family: sans-serif;
-    color: white;
-    font-weight: bold;
-    text-shadow: 0.2em 0.2em 0.2em black;
-    text-align: center;
-    left: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0.2em 0.2em 0.2em black;
+  text-align: center;
+  left: 0;
 	top: 5px;
 	right: 0;
-    bottom: 0;
-    margin: auto;
-    position: absolute;
-    z-index: -10;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  z-index: -10;
 }
 span.memoday_name{
-    font-size: 40px;
+    font-size: 4vmin;
 }
 .memoday_num, .memoday{
-    font-size: 55px;
+    font-size: 6vmin;
 }
+
 /*팝업*/
 div#popup_info{
   width: 70%;
@@ -112,13 +129,16 @@ div#popup_info{
   height: 100%;
   position: absolute;
 }
+/*하단 흰색 부분*/
 .footer_pop{
   top: 60%;
   background-color:#fff;
 }
+/*배경 화면*/
 .header_img_pop{
   width: 100%;
 }
+/*프로필, 무료통화 버튼*/
 .pro1_pop, .call_pop{
   overflow: hidden;
   display: flex;
@@ -127,12 +147,23 @@ div#popup_info{
   border-radius: 50%; 
   position: absolute;
 }
+/*프로필*/
 .pro1_pop{
   width: 125px;
   height: 125px;
   left: 8%;
   top: 52%;
 }
+#profile_pop{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+/*무료통화 버튼*/
 .call_pop{
   width: 70px;
   height: 70px;
@@ -140,6 +171,7 @@ div#popup_info{
   top: 55%;
   border: solid 1px #dbdbdb;
 }
+/*무료 통화 안에 이미지*/
 .call_icon{
   width: 100%;
   height: 100%;
@@ -151,6 +183,7 @@ div#popup_info{
   position: absolute;
   cursor: pointer;
 }
+/*사용자 정보 폰트*/
 .font_pop{
   font-family: sans-serif;
   font-weight: 200;
@@ -172,6 +205,7 @@ div#popup_info{
 #email{
  font-size: 2vmin;
 }
+/*닫기 버튼*/
 .close{
   left: 88%;
   top: 2%;
@@ -192,4 +226,20 @@ div#popup_info{
   align-items: center;
   justify-content: center;
   border-radius: 50%; 
+}
+/*하단 조그만 버튼*/
+#btn_pop{
+  color: black;
+  font-size: 1.5vmin;
+  height: 4%;
+  width: 13%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 40%;
+  border: solid 1px #dbdbdb;
+  left: 78%;
+  top: 90%;
 }
