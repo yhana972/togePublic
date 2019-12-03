@@ -1,4 +1,4 @@
-html, body{ /*기본*/
+﻿html, body{ /*湲곕낯*/
     width: 100%;
     height: 100%;
     margin: 0;
@@ -9,20 +9,20 @@ html, body{ /*기본*/
     height: 10%;
 }
 div.header{
-    top: 25px;
+    top: 10%;
 }
 span.body{
     font-family: sans-serif;
     color: white;
     text-shadow: 0.1em 0.1em 0.1em black;
     position: fixed;
-    top: 150px;
+    top: 20%;
     font-size: 3.5vmin;
 }
 div.footer{
     bottom: 25px;
 }
-/*배경이미지*/
+/*諛곌꼍�씠誘몄�*/
 div.whole{ 
     width: 100%;
     height: 100%;
@@ -32,7 +32,7 @@ div.whole{
     justify-content: center;
     position: relative;
 }
-/*프로필 이미지, (배경 설정, 기념일 설정, 캘린더) 아이콘*/
+/*�봽濡쒗븘 �씠誘몄�, (諛곌꼍 �꽕�젙, 湲곕뀗�씪 �꽕�젙, 罹섎┛�뜑) �븘�씠肄�*/
 .back_img, .memoday_set, .calender{ 
     width: 110px;
     height: 110px;
@@ -66,7 +66,7 @@ div.whole{
   border-radius: 50%; 
   position: absolute;
 }
-/*아이콘*/
+/*�븘�씠肄�*/
 .icon{
     width: 100%;
     height: 100%;
@@ -84,7 +84,7 @@ span.memoday_set{
 span.calender{
     left: 390px;
 }
-/*기념일*/
+/*湲곕뀗�씪*/
 .memo{
   text-decoration: none;
   font-family: sans-serif;
@@ -107,7 +107,7 @@ span.memoday_name{
     font-size: 6vmin;
 }
 
-/*팝업*/
+/*�뙘�뾽*/
 div#popup_info{
   width: 70%;
   height: 55%;
@@ -129,16 +129,16 @@ div#popup_info{
   height: 100%;
   position: absolute;
 }
-/*하단 흰색 부분*/
+/*�븯�떒 �씛�깋 遺�遺�*/
 .footer_pop{
   top: 60%;
   background-color:#fff;
 }
-/*배경 화면*/
+/*諛곌꼍 �솕硫�*/
 .header_img_pop{
   width: 100%;
 }
-/*프로필, 무료통화 버튼*/
+/*�봽濡쒗븘, 臾대즺�넻�솕 踰꾪듉*/
 .pro1_pop, .call_pop{
   overflow: hidden;
   display: flex;
@@ -147,7 +147,7 @@ div#popup_info{
   border-radius: 50%; 
   position: absolute;
 }
-/*프로필*/
+/*�봽濡쒗븘*/
 .pro1_pop{
   width: 125px;
   height: 125px;
@@ -163,7 +163,7 @@ div#popup_info{
   justify-content: center;
   position: absolute;
 }
-/*무료통화 버튼*/
+/*臾대즺�넻�솕 踰꾪듉*/
 .call_pop{
   width: 70px;
   height: 70px;
@@ -171,7 +171,7 @@ div#popup_info{
   top: 55%;
   border: solid 1px #dbdbdb;
 }
-/*무료 통화 안에 이미지*/
+/*臾대즺 �넻�솕 �븞�뿉 �씠誘몄�*/
 .call_icon{
   width: 100%;
   height: 100%;
@@ -183,7 +183,7 @@ div#popup_info{
   position: absolute;
   cursor: pointer;
 }
-/*사용자 정보 폰트*/
+/*�궗�슜�옄 �젙蹂� �룿�듃*/
 .font_pop{
   font-family: sans-serif;
   font-weight: 200;
@@ -205,7 +205,7 @@ div#popup_info{
 #email{
  font-size: 2vmin;
 }
-/*닫기 버튼*/
+/*�떕湲� 踰꾪듉*/
 .close{
   left: 88%;
   top: 2%;
@@ -227,7 +227,251 @@ div#popup_info{
   justify-content: center;
   border-radius: 50%; 
 }
-/*하단 조그만 버튼*/
+/*�븯�떒 議곌렇留� 踰꾪듉*/
+#btn_pop{
+  color: black;
+  font-size: 1.5vmin;
+  height: 4%;
+  width: 13%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 40%;
+  border: solid 1px #dbdbdb;
+  left: 78%;
+  top: 90%;
+}html, body{ /*湲곕낯*/
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.header, .footer{
+    position: fixed;
+    width: 100%;
+    height: 10%;
+}
+div.header{
+    top: 10%;
+}
+span.body{
+    font-family: sans-serif;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.1em black;
+    position: fixed;
+    top: 20%;
+    font-size: 3.5vmin;
+}
+div.footer{
+    bottom: 25px;
+}
+/*諛곌꼍�씠誘몄�*/
+div.whole{ 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/*�봽濡쒗븘 �씠誘몄�, (諛곌꼍 �꽕�젙, 湲곕뀗�씪 �꽕�젙, 罹섎┛�뜑) �븘�씠肄�*/
+.back_img, .memoday_set, .calender{ 
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    position: absolute;
+    cursor: pointer;
+}
+.pro1{
+  width: 110px;
+  height: 110px;
+  left: 5%;
+  position: absolute;
+}
+.pro2{
+  width: 110px;
+  height: 110px;
+  right: 5%;
+  position: absolute;
+}
+#profile_1, #profile_2{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; 
+  position: absolute;
+}
+/*�븘�씠肄�*/
+.icon{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span.back_img{
+    left: 50px;
+}
+span.memoday_set{
+    left: 220px;
+}
+span.calender{
+    left: 390px;
+}
+/*湲곕뀗�씪*/
+.memo{
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0.2em 0.2em 0.2em black;
+  text-align: center;
+  left: 0;
+	top: 5px;
+	right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  z-index: -10;
+}
+span.memoday_name{
+    font-size: 4vmin;
+}
+.memoday_num, .memoday{
+    font-size: 6vmin;
+}
+
+/*�뙘�뾽*/
+div#popup_info{
+  width: 70%;
+  height: 55%;
+  left: 0;
+	top: 0;
+	right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #fff;
+  position: absolute;
+  right: -7;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5%;
+  overflow: hidden;
+}
+.header_pop, .footer_pop, .body_pop{
+  width:100%;
+  height: 100%;
+  position: absolute;
+}
+/*�븯�떒 �씛�깋 遺�遺�*/
+.footer_pop{
+  top: 60%;
+  background-color:#fff;
+}
+/*諛곌꼍 �솕硫�*/
+.header_img_pop{
+  width: 100%;
+}
+/*�봽濡쒗븘, 臾대즺�넻�솕 踰꾪듉*/
+.pro1_pop, .call_pop{
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; 
+  position: absolute;
+}
+/*�봽濡쒗븘*/
+.pro1_pop{
+  width: 125px;
+  height: 125px;
+  left: 8%;
+  top: 52%;
+}
+#profile_pop{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+/*臾대즺�넻�솕 踰꾪듉*/
+.call_pop{
+  width: 70px;
+  height: 70px;
+  left: 80%;
+  top: 55%;
+  border: solid 1px #dbdbdb;
+}
+/*臾대즺 �넻�솕 �븞�뿉 �씠誘몄�*/
+.call_icon{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; 
+  position: absolute;
+  cursor: pointer;
+}
+/*�궗�슜�옄 �젙蹂� �룿�듃*/
+.font_pop{
+  font-family: sans-serif;
+  font-weight: 200;
+  color: #585858;
+  position: absolute;
+  top: 15%;
+}
+#user_info{
+  text-align: left;
+  right: 65%;
+}
+#name{
+  font-size: 3.5vmin;
+  font-weight: bold;
+}
+.birthday{
+  font-size: 2.5vmin;
+}
+#email{
+ font-size: 2vmin;
+}
+/*�떕湲� 踰꾪듉*/
+.close{
+  left: 88%;
+  top: 2%;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+}
+#close{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; 
+}
+/*�븯�떒 議곌렇留� 踰꾪듉*/
 #btn_pop{
   color: black;
   font-size: 1.5vmin;
